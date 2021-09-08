@@ -12,17 +12,18 @@ import {
   MinPara,
 } from "./styles";
 
-const LeftContentBlock = ({
+const ContentBlockWithSections = ({
   icon,
   title,
   content,
   section,
   t,
   id,
+  fadeDirection
 }: ContentBlockProps) => {
   return (
     <LeftContentSection>
-      <Fade direction="left">
+      <Fade direction={fadeDirection} triggerOnce>
         <Row justify="space-between" align="middle" id={id}>
           <Col lg={11} md={11} sm={12} xs={24}>
             <SvgIcon src={icon} width="100%" height="100%" />
@@ -53,4 +54,4 @@ const LeftContentBlock = ({
   );
 };
 
-export default withTranslation()(LeftContentBlock);
+export default withTranslation()(ContentBlockWithSections);

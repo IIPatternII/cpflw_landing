@@ -18,6 +18,7 @@ const RightBlock = ({
   icon,
   t,
   id,
+  fadeDirection
 }: ContentBlockProps) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
@@ -27,7 +28,7 @@ const RightBlock = ({
   };
   return (
     <RightBlockContainer>
-      <Fade direction="right">
+      <Fade direction={fadeDirection} triggerOnce>
         <Row justify="space-between" align="middle" id={id}>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>

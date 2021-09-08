@@ -1,3 +1,5 @@
+import { FadeProps } from "react-awesome-reveal";
+
 export interface ContentBlockProps {
   icon: string;
   title: string;
@@ -6,5 +8,5 @@ export interface ContentBlockProps {
   button?: any;
   t?: any;
   id: string;
-  type?: string;
+  fadeDirection: FadeProps["direction"];
 }
