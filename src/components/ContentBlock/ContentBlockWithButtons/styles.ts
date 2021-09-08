@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const RightBlockContainer = styled("section")`
+export const BlockContainerWB = styled("section")`
   position: relative;
   padding: 10rem 0 8rem;
 

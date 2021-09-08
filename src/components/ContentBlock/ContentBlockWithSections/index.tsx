@@ -4,7 +4,7 @@ import { SvgIcon } from "../../../common/SvgIcon";
 import { ContentBlockProps } from "../types";
 import { Fade } from "react-awesome-reveal";
 import {
-  LeftContentSection,
+  BlockContainerWS,
   Content,
   ContentWrapper,
   ServiceWrapper,
@@ -22,7 +22,7 @@ const ContentBlockWithSections = ({
   fadeDirection
 }: ContentBlockProps) => {
   return (
-    <LeftContentSection>
+    <BlockContainerWS>
       <Fade direction={fadeDirection} triggerOnce>
         <Row justify="space-between" align="middle" id={id}>
           <Col lg={11} md={11} sm={12} xs={24}>
@@ -50,7 +50,7 @@ const ContentBlockWithSections = ({
           </Col>
         </Row>
       </Fade>
-    </LeftContentSection>
+    </BlockContainerWS>
   );
 };
 

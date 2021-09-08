@@ -5,7 +5,7 @@ import { Button } from "../../../common/Button";
 import { ContentBlockProps } from "../types";
 import { Fade } from "react-awesome-reveal";
 import {
-  RightBlockContainer,
+  BlockContainerWB,
   Content,
   ContentWrapper,
   ButtonWrapper,
@@ -27,7 +27,7 @@ const RightBlock = ({
     });
   };
   return (
-    <RightBlockContainer>
+    <BlockContainerWB>
       <Fade direction={fadeDirection} triggerOnce>
         <Row justify="space-between" align="middle" id={id}>
           <Col lg={11} md={11} sm={11} xs={24}>
@@ -56,7 +56,7 @@ const RightBlock = ({
           </Col>
         </Row>
       </Fade>
-    </RightBlockContainer>
+    </BlockContainerWB>
   );
 };
 
