@@ -3749,6 +3749,14 @@ convert-source-map@^0.3.3:
   resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-0.3.5.tgz#f1d802950af7dd2631a1febe0596550c86ab3190"
   integrity sha1-8dgClQr33SYxof6+BZZVDIarMZA=
 
+convertkit-react@^1.5.5:
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/convertkit-react/-/convertkit-react-1.5.5.tgz#826bc89e6097cc5479eefaf07216aa03942643b4"
+  integrity sha512-r9WV+SQ14ZZGOxAAvKhAwVzsBSGPGaGlfT1YJeyT/jB6MeP9epdG3HwWGcnacuFmYHUmEibxm4CQiMZT0rapEw==
+  dependencies:
+    prop-types "^15.7.2"
+    react "^17.0.2"
+
 cookie-signature@1.0.6:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/cookie-signature/-/cookie-signature-1.0.6.tgz#e303a882b342cc3ee8ca513a79999734dab3ae2c"
