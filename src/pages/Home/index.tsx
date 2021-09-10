@@ -1,8 +1,7 @@
 import { lazy } from "react";
-import IntroContent from "../../content/IntroContent.json";
-import AboutContent from "../../content/AboutContent.json";
-import MissionContent from "../../content/MissionContent.json";
-import ProductContent from "../../content/ProductContent.json";
+import HeroContent from "../../content/HeroContent.json";
+import FirstBlockContent from "../../content/FirstBlockContent.json";
+import SecondBlockContent from "../../content/SecondBlockContent.json";
 
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
@@ -16,25 +15,26 @@ const Home = () => {
       <ScrollToTop />
       <ContentBlockWithEmailCapture
         fadeDirection="up"
-        title={IntroContent.title}
-        content={IntroContent.text}
-        subtext={IntroContent.subtext}
+        title={HeroContent.title}
+        content={HeroContent.text}
+        subtext={HeroContent.subtext}
         icon="developer.svg"
-        id="intro"
+        id="hero"
       />
       <ContentBlockWithSections
         fadeDirection="left"
-        title={AboutContent.title}
-        content={AboutContent.text}
-        section={AboutContent.section}
-        icon="graphs.svg"
+        title={FirstBlockContent.title}
+        content={FirstBlockContent.text}
+        section={FirstBlockContent.section}
+        icon="product-launch.svg"
         id="client_portal"
       />
       <ContentBlockWithButtons
         fadeDirection="right"
-        title={MissionContent.title}
-        content={MissionContent.text}
-        icon="product-launch.svg"
+        title={SecondBlockContent.title}
+        content={SecondBlockContent.text}
+        button={SecondBlockContent.button}
+        icon="graphs.svg"
         id="crm"
       />
     </Container>

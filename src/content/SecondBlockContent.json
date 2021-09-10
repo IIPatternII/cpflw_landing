@@ -1,0 +1,10 @@
+{
+  "title": "Customer Relationship Management",
+  "text": "All your client's data in one place! Create long-lasting relationships with your customers, and convince new prospects!",
+  "button": [
+    {
+      "title": "Join our Waiting list!",
+      "scrollTo": "hero"
+    }
+  ]
+}
