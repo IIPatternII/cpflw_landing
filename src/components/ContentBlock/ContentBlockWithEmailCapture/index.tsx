@@ -11,13 +11,15 @@ import {
   ButtonWrapper,
 } from "./styles";
 import ConvertKitForm from 'convertkit-react';
+import "./convertkitStyles.css"
 
 
 const convertkitConfig = {
   formId: 2587777,
   template: 'minimal',
   emailPlaceholder: 'Enter an email address',
-  submitText: 'Sign up',
+  submitText: 'Notify me!',
+  hideName: true
 }
 
 const ContentBlockWithEmailCapture = ({
@@ -42,7 +44,7 @@ const ContentBlockWithEmailCapture = ({
             <ContentWrapper>
               <h6>{t(title)}</h6>
               <Content>{t(content)}</Content>
-              <ConvertKitForm {...convertkitConfig}/>
+              <ConvertKitForm {...convertkitConfig} className='ck-fm'/>
             </ContentWrapper>
           </Col>
           <Col lg={11} md={11} sm={12} xs={24}>
