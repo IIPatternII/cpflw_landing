@@ -1,13 +1,5 @@
 {
-  "title": "Landing page template for developers & startups",
-  "text": "Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.",
-  "button": [
-    {
-      "title": "Explore"
-    },
-    {
-      "title": "Learn more",
-      "color": "#fff"
-    }
-  ]
+  "title": "Client Portal and CRM for Small Businesses and Freelancers",
+  "text": "Eliminate repetitive and time-wasting manual processes and create long-lasting relationships with your customers. With our no-code visual builder, you can have your own custom client portal in minutes!",
+  "subtext": "Enter our waiting list to enjoy a 50% discount when we launch!"
 }

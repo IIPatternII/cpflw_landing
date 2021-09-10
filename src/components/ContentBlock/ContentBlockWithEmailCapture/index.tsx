@@ -9,6 +9,7 @@ import {
   Content,
   ContentWrapper,
   ButtonWrapper,
+  Subtext,
 } from "./styles";
 import ConvertKitForm from 'convertkit-react';
 import "./convertkitStyles.css"
@@ -25,17 +26,12 @@ const convertkitConfig = {
 const ContentBlockWithEmailCapture = ({
   title,
   content,
+  subtext,
   icon,
   t,
   id,
   fadeDirection
 }: ContentBlockProps) => {
-  const scrollTo = (id: string) => {
-    const element = document.getElementById(id) as HTMLDivElement;
-    element.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
   return (
     <BlockContainerWB>
       <Fade direction={fadeDirection} triggerOnce>
@@ -44,6 +40,7 @@ const ContentBlockWithEmailCapture = ({
             <ContentWrapper>
               <h6>{t(title)}</h6>
               <Content>{t(content)}</Content>
+              <Subtext>{t(subtext)}</Subtext>
               <ConvertKitForm {...convertkitConfig} className='ck-fm'/>
             </ContentWrapper>
           </Col>

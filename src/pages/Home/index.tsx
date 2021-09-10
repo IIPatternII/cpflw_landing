@@ -18,7 +18,7 @@ const Home = () => {
         fadeDirection="up"
         title={IntroContent.title}
         content={IntroContent.text}
-        button={IntroContent.button}
+        subtext={IntroContent.subtext}
         icon="developer.svg"
         id="intro"
       />
