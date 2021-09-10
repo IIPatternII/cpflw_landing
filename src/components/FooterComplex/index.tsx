@@ -26,7 +26,7 @@ interface SocialLinkProps {
   src: string;
 }
 
-const Footer = ({ t }: any) => {
+const FooterComplex = ({ t }: any) => {
   const handleChange = (language: string) => {
     i18n.changeLanguage(language);
   };
@@ -174,4 +174,4 @@ const Footer = ({ t }: any) => {
   );
 };
 
-export default withTranslation()(Footer);
+export default withTranslation()(FooterComplex);
