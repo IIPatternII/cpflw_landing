@@ -6,12 +6,8 @@ import HeroContent from "../../content/HeroContent.json";
 
 import {
   FooterSection,
-  Title,
   Para,
-  Large,
   Chat,
-  Empty,
-  Language,
 } from "./styles";
 
 const FooterSimple = ({ t }: any) => {
