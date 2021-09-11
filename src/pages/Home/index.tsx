@@ -18,7 +18,7 @@ const Home = () => {
         title={HeroContent.title}
         content={HeroContent.text}
         subtext={HeroContent.subtext}
-        icon="developer.svg"
+        image="business-working.png"
         id="hero"
       />
       <ContentBlockWithSections
@@ -26,7 +26,7 @@ const Home = () => {
         title={FirstBlockContent.title}
         content={FirstBlockContent.text}
         section={FirstBlockContent.section}
-        icon="product-launch.svg"
+        image="product-launch.svg"
         id="client_portal"
       />
       <ContentBlockWithButtons
@@ -34,7 +34,7 @@ const Home = () => {
         title={SecondBlockContent.title}
         content={SecondBlockContent.text}
         button={SecondBlockContent.button}
-        icon="graphs.svg"
+        image="graphs.svg"
         id="crm"
       />
     </Container>

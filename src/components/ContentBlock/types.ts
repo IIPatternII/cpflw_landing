@@ -1,7 +1,7 @@
 import { FadeProps } from "react-awesome-reveal";
 
 export interface ContentBlockProps {
-  icon: string;
+  image: string;
   title: string;
   content: string;
   subtext?: string;

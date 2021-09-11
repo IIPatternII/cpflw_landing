@@ -1,6 +1,5 @@
 import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
-import { SvgIcon } from "../../common/SvgIcon";
 import Container from "../../common/Container";
 
 import i18n from "i18next";
@@ -20,6 +19,7 @@ import {
   LanguageSwitch,
   LanguageSwitchContainer,
 } from "./styles";
+import { ImageComponent } from "../../common/ImageComponent";
 
 interface SocialLinkProps {
   href: string;
@@ -40,7 +40,7 @@ const FooterComplex = ({ t }: any) => {
         key={src}
         aria-label={src}
       >
-        <SvgIcon src={src} width="25px" height="25px" />
+        <ImageComponent src={src} width="25px" height="25px" />
       </a>
     );
   };
@@ -106,7 +106,7 @@ const FooterComplex = ({ t }: any) => {
               <Label htmlFor="select-lang">{t("Language")}</Label>
               <LanguageSwitchContainer>
                 <LanguageSwitch onClick={() => handleChange("en")}>
-                  <SvgIcon
+                  <ImageComponent
                     src="united-states.svg"
                     aria-label="homepage"
                     width="30px"
@@ -114,7 +114,7 @@ const FooterComplex = ({ t }: any) => {
                   />
                 </LanguageSwitch>
                 <LanguageSwitch onClick={() => handleChange("es")}>
-                  <SvgIcon
+                  <ImageComponent
                     src="spain.svg"
                     aria-label="homepage"
                     width="30px"
@@ -135,7 +135,7 @@ const FooterComplex = ({ t }: any) => {
           >
             <NavLink to="/">
               <LogoContainer>
-                <SvgIcon
+                <ImageComponent
                   src="logo.svg"
                   aria-label="homepage"
                   width="101px"
