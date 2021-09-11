@@ -26,7 +26,7 @@ const Home = () => {
         title={FirstBlockContent.title}
         content={FirstBlockContent.text}
         section={FirstBlockContent.section}
-        image="product-launch.svg"
+        image="client_portal.png"
         id="client_portal"
       />
       <ContentBlockWithButtons
@@ -34,7 +34,7 @@ const Home = () => {
         title={SecondBlockContent.title}
         content={SecondBlockContent.text}
         button={SecondBlockContent.button}
-        image="graphs.svg"
+        image="analyze.png"
         id="crm"
       />
     </Container>
