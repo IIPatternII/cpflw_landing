@@ -31,7 +31,7 @@
   width: 30%;
   padding: 10px;
   /* background: rgba(255, 255, 255, 0.5); */
-  background: #ed7d3c;
+  background: #e65665;
   color: #fff;
   font-weight: bold;
   font-size: large;
@@ -47,5 +47,5 @@
 .ck-fm button:active {
   transform: scale(1);
   opacity: 1;
-  background: #e96316;
+  background: #de2134;
 }
