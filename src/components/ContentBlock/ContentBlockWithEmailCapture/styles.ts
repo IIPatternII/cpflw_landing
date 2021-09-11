@@ -17,12 +17,6 @@ export const Content = styled("p")`
   margin: 1.5rem 0 2rem 0;
 `;
 
-export const Subtext = styled("p")`
-  color: gray;
-  margin: 0.5rem 1rem;
-  font-size: medium;
-`;
-
 export const ContentWrapper = styled("div")`
   position: relative;
   max-width: 540px;

@@ -6,20 +6,10 @@ import {
   BlockContainerWB,
   Content,
   ContentWrapper,
-  Subtext,
 } from "./styles";
-import ConvertKitForm from 'convertkit-react';
-import "./convertkitStyles.css"
 import { ImageComponent } from "../../../common/ImageComponent";
+import CaptureEmailForm from "../../../common/CaptureEmailForm";
 
-
-const convertkitConfig = {
-  formId: 2587777,
-  template: 'minimal',
-  emailPlaceholder: 'Enter an email address',
-  submitText: 'Notify me!',
-  hideName: true
-}
 
 const ContentBlockWithEmailCapture = ({
   title,
@@ -38,8 +28,7 @@ const ContentBlockWithEmailCapture = ({
             <ContentWrapper>
               <h6>{t(title)}</h6>
               <Content>{t(content)}</Content>
-              <Subtext>{t(subtext)}</Subtext>
-              <ConvertKitForm {...convertkitConfig} className='ck-fm'/>
+              <CaptureEmailForm subtext={subtext}/>
             </ContentWrapper>
           </Col>
           <Col lg={11} md={11} sm={12} xs={24}>

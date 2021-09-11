@@ -35,3 +35,7 @@ export interface validateProps {
   message: string;
   email: string;
 }
+
+export interface CaptureEmailFormProps {
+  subtext?:string;
+}
