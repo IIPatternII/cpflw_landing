@@ -13,7 +13,7 @@ export interface ButtonProps {
 
 export interface ImageComponentProps {
   src: string;
-  width: string;
+  width?: string;
   height: string;
 }
 
