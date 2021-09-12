@@ -40,3 +40,15 @@ export const MinTitle = styled("h6")`
 export const MinPara = styled("p")`
   font-size: 13px;
 `;
+
+export const DisplayOnlyMobileSize = styled("div")`
+  @media only screen and (min-width: 576px) {
+    display: none;
+  }
+`;
+
+export const HideOnlyMobileSize = styled("div")`
+  @media only screen and (max-width: 575px) {
+    display: none;
+  }
+`;
