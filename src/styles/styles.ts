@@ -32,7 +32,7 @@ export const Styles = createGlobalStyle`
     }
 
     a:hover {
-        color: #18216d;
+        color: #e65665;
     }
 
     input,
@@ -87,7 +87,7 @@ export const Styles = createGlobalStyle`
         color: #2E186A;
 
         :hover {
-            color: #2e186a;
+            color: #e65665;
         }
     }
     
