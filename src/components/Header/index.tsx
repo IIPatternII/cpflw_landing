@@ -62,7 +62,7 @@ const Header = ({ t }: any) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <ImageComponent src="logo_full.png" height="34px" />
+            <ImageComponent src="logo_full.png" width="220px" height="34px" />
           </LogoContainer>
           <NotHidden>
             <MenuItem />
