@@ -6,6 +6,7 @@ import { Styles } from "../styles/styles";
 import FooterSimple from "../components/FooterSimple";
 import { useEffect } from "react";
 import ReactGA from 'react-ga';
+import FooterComplex from "../components/FooterComplex";
 
 
 ReactGA.initialize('UA-207645967-1');
@@ -32,7 +33,8 @@ const Router = () => {
           );
         })}
       </Switch>
-      <FooterSimple/>
+      {/* <FooterSimple/> */}
+        <FooterComplex/>
     </Suspense>
   );
 };

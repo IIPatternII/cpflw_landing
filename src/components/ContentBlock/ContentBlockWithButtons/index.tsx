@@ -11,7 +11,7 @@ import {
   ButtonWrapper,
 } from "./styles";
 
-const RightBlock = ({
+const ContentBlockWithButtons = ({
   title,
   content,
   button,
@@ -60,4 +60,4 @@ const RightBlock = ({
   );
 };
 
-export default withTranslation()(RightBlock);
+export default withTranslation()(ContentBlockWithButtons);
