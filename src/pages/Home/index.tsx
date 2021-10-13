@@ -2,6 +2,8 @@ import { lazy } from "react";
 import HeroContent from "../../content/HeroContent.json";
 import FirstBlockContent from "../../content/FirstBlockContent.json";
 import SecondBlockContent from "../../content/SecondBlockContent.json";
+import MultipleSectionsContent from "../../content/MultipleSectionsContent.json";
+import MultipleSections from "../../components/MultipleSections";
 
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
@@ -21,6 +23,11 @@ const Home = () => {
         image="business-working.png"
         id="hero"
       />
+      <MultipleSections 
+        title={MultipleSectionsContent.title}
+        sections={MultipleSectionsContent.sections}
+        id="multiple"
+        />
       <ContentBlockWithSections
         fadeDirection="left"
         title={FirstBlockContent.title}
