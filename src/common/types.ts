@@ -13,8 +13,9 @@ export interface ButtonProps {
 
 export interface ImageComponentProps {
   src: string;
-  width?: string;
   height: string;
+  width?: string;
+  rounded?: boolean;
 }
 
 export interface InputProps {

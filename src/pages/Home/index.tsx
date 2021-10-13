@@ -1,48 +1,61 @@
-import { lazy } from "react";
-import HeroContent from "../../content/HeroContent.json";
-import FirstBlockContent from "../../content/FirstBlockContent.json";
-import SecondBlockContent from "../../content/SecondBlockContent.json";
-import MultipleSectionsContent from "../../content/MultipleSectionsContent.json";
-import MultipleSections from "../../components/MultipleSections";
+import { lazy } from 'react';
+import HeroContent from '../../content/HeroContent.json';
+import FirstBlockContent from '../../content/FirstBlockContent.json';
+import SecondBlockContent from '../../content/SecondBlockContent.json';
+import MultipleSectionsContent from '../../content/MultipleSectionsContent.json';
+import MultipleSections from '../../components/MultipleSections';
+import TestimonialsContent from '../../content/TestimonialsContent.json';
+import Testimonials from '../../components/Testimonials';
 
-const Container = lazy(() => import("../../common/Container"));
-const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
-const ContentBlockWithButtons = lazy(() => import("../../components/ContentBlock/ContentBlockWithButtons"));
-const ContentBlockWithSections = lazy(() => import("../../components/ContentBlock/ContentBlockWithSections"));
-const ContentBlockWithEmailCapture = lazy(() => import("../../components/ContentBlock/ContentBlockWithEmailCapture"));
+const Container = lazy(() => import('../../common/Container'));
+const ScrollToTop = lazy(() => import('../../common/ScrollToTop'));
+const ContentBlockWithButtons = lazy(
+  () => import('../../components/ContentBlock/ContentBlockWithButtons')
+);
+const ContentBlockWithSections = lazy(
+  () => import('../../components/ContentBlock/ContentBlockWithSections')
+);
+const ContentBlockWithEmailCapture = lazy(
+  () => import('../../components/ContentBlock/ContentBlockWithEmailCapture')
+);
 
 const Home = () => {
   return (
     <Container>
       <ScrollToTop />
       <ContentBlockWithEmailCapture
-        fadeDirection="up"
+        fadeDirection='up'
         title={HeroContent.title}
         content={HeroContent.text}
         subtext={HeroContent.subtext}
-        image="business-working.png"
-        id="hero"
+        image='business-working.png'
+        id='hero'
       />
-      <MultipleSections 
+      <MultipleSections
         title={MultipleSectionsContent.title}
         sections={MultipleSectionsContent.sections}
-        id="multiple"
-        />
+        id='multiple'
+      />
+      <Testimonials
+        title={TestimonialsContent.title}
+        testimonials={TestimonialsContent.testimonials}
+        id='testimonials'
+      />
       <ContentBlockWithSections
-        fadeDirection="left"
+        fadeDirection='left'
         title={FirstBlockContent.title}
         content={FirstBlockContent.text}
         section={FirstBlockContent.section}
-        image="client_portal.png"
-        id="client_portal"
+        image='client_portal.png'
+        id='client_portal'
       />
       <ContentBlockWithButtons
-        fadeDirection="right"
+        fadeDirection='right'
         title={SecondBlockContent.title}
         content={SecondBlockContent.text}
         button={SecondBlockContent.button}
-        image="analyze.png"
-        id="crm"
+        image='analyze.png'
+        id='crm'
       />
     </Container>
   );

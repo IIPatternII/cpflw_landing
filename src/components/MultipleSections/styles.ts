@@ -2,13 +2,17 @@ import styled from "styled-components";
 
 export const MultipleSectionsSection = styled("section")`
   position: relative;
-  padding: 7.5rem 0 3rem;
+  padding: 4rem 0 4rem;
   text-align: center;
   /* display: flex; */
   justify-content: center;
 
   @media screen and (max-width: 1024px) {
-    padding: 5.5rem 0 3rem;
+    padding: 3rem 0 3rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 2rem 0 2rem;
   }
 `;
 
