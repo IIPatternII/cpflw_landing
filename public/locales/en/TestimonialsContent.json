@@ -1,0 +1,29 @@
+{
+  "title": "What our customers say about us",
+  "testimonials": [
+    {
+      "name": "Elizabeth E.",
+      "extra": "DJ",
+      "quote": "\"Create step-by-step client workflows and forms with our no code visual builder. No coding skills required\"",
+      "image": "leila.jpeg"
+    },
+    {
+      "name": "Alan T.",
+      "extra": "Artist",
+      "quote": "\"Perfect for legal teams, accountants, real estate agents, human resources, freelancers and service businesses\"",
+      "image": "leila.jpeg"
+    },
+    {
+      "name": "John Doe",
+      "extra": "Singer",
+      "quote": "\"Create step-by-step client workflows and forms with our no code visual builder. No coding skills required\"",
+      "image": "leila.jpeg"
+    },
+    {
+      "name": "Ricardo A.",
+      "extra": "Actor",
+      "quote": "\"Perfect for legal teams, accountants, real estate agents, human resources, freelancers and service businesses\"",
+      "image": "leila.jpeg"
+    }
+  ]
+}

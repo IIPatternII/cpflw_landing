@@ -1,10 +1,7 @@
 import { lazy } from 'react';
-import HeroContent from '../../content/HeroContent.json';
-import FirstBlockContent from '../../content/FirstBlockContent.json';
-import SecondBlockContent from '../../content/SecondBlockContent.json';
-import MultipleSectionsContent from '../../content/MultipleSectionsContent.json';
+//TODO: Lazy load all components!
 import MultipleSections from '../../components/MultipleSections';
-import TestimonialsContent from '../../content/TestimonialsContent.json';
+//TODO: Lazy load all components!
 import Testimonials from '../../components/Testimonials';
 
 const Container = lazy(() => import('../../common/Container'));
@@ -25,36 +22,19 @@ const Home = () => {
       <ScrollToTop />
       <ContentBlockWithEmailCapture
         fadeDirection='up'
-        title={HeroContent.title}
-        content={HeroContent.text}
-        subtext={HeroContent.subtext}
-        image='business-working.png'
+        content='HeroContent'
         id='hero'
       />
-      <MultipleSections
-        title={MultipleSectionsContent.title}
-        sections={MultipleSectionsContent.sections}
-        id='multiple'
-      />
-      <Testimonials
-        title={TestimonialsContent.title}
-        testimonials={TestimonialsContent.testimonials}
-        id='testimonials'
-      />
+      <MultipleSections content='MultipleSectionsContent' id='multiple' />
+      <Testimonials content='TestimonialsContent' id='testimonials' />
       <ContentBlockWithSections
         fadeDirection='left'
-        title={FirstBlockContent.title}
-        content={FirstBlockContent.text}
-        section={FirstBlockContent.section}
-        image='client_portal.png'
+        content='FirstBlockContent'
         id='client_portal'
       />
       <ContentBlockWithButtons
         fadeDirection='right'
-        title={SecondBlockContent.title}
-        content={SecondBlockContent.text}
-        button={SecondBlockContent.button}
-        image='analyze.png'
+        content='SecondBlockContent'
         id='crm'
       />
     </Container>

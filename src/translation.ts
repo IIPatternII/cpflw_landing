@@ -4,8 +4,6 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from "i18next-browser-languagedetector";
 import Backend from 'i18next-http-backend';
 
-import translationEn from "./locales/en/translation.json";
-import translationEs from "./locales/es/translation.json";
 
 i18n
   .use(Backend)
@@ -16,21 +14,21 @@ i18n
     lng: "en",
     fallbackLng: "en",
 
-    keySeparator: false,
+    // keySeparator: false,
     interpolation: {
       escapeValue: false,
     },
 
-    resources: {
-      en: {
-        translations: translationEn,
-      },
-      es: {
-        translations: translationEs,
-      },
-    },
-    ns: ["translations"],
-    defaultNS: "translations",
+    // resources: {
+    //   en: {
+    //     translations: translationEn,
+    //   },
+    //   es: {
+    //     translations: translationEs,
+    //   },
+    // },
+    // ns: ["translations"],
+    defaultNS: "translation",
   });
 
 export default i18n;

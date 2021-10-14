@@ -1,6 +1,6 @@
 import { Row, Col } from 'antd';
-import { withTranslation } from 'react-i18next';
-import { Fade, Slide } from 'react-awesome-reveal';
+import { useTranslation } from 'react-i18next';
+import { Fade } from 'react-awesome-reveal';
 import {
   ItemContent,
   ItemTitle,
@@ -10,25 +10,27 @@ import {
 import { ImageComponent } from '../../common/ImageComponent';
 
 interface MultipleSectionSProps {
-  title: string;
-  sections: { title: string; content: string; image: string }[];
+  content: string;
   id: string;
-  t: any;
 }
 
-const MultipleSections = ({
-  title,
-  sections,
-  id,
-  t,
-}: MultipleSectionSProps) => {
+interface Section {
+  title: string;
+  content: string;
+  image: string;
+}
+
+const MultipleSections = ({ content, id }: MultipleSectionSProps) => {
+  const { t } = useTranslation(content);
+  const section: Section[] = t('sections', { returnObjects: true });
+
   return (
     <MultipleSectionsSection id={id}>
       <Fade direction='up' triggerOnce>
-        <h6>{title}</h6>
+        <h6>{t('title')}</h6>
         <Row justify='space-between' align='top'>
-          {typeof sections === 'object' &&
-            sections.map(({ title, content, image }, index) => {
+          {typeof section === 'object' &&
+            section.map(({ title, content, image }, index) => {
               return (
                 <Col key={index} lg={6} md={12} sm={12} xs={24}>
                   <ItemWrapper>
@@ -45,4 +47,4 @@ const MultipleSections = ({
   );
 };
 
-export default withTranslation()(MultipleSections);
+export default MultipleSections;

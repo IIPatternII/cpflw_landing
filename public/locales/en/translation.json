@@ -1,0 +1,57 @@
+{
+  "About": "About",
+  "Policy": "Policy",
+  "Mission": "Mission",
+  "Product": "Product",
+  "Tell us everything": "Tell us everything",
+  "Contact": "Contact",
+  "Do you have any question? Feel free to reach out.": "Do you have any question? Feel free to reach out.",
+  "Let's Chat": "Let's Chat",
+  "Application Security": "Application Security",
+  "Software Principles": "Software Principles",
+  "Support Center": "Support Center",
+  "Customer Support": "Customer Support",
+  "Address": "Address",
+  "Press": "Press",
+  "Careers & Culture": "Careers & Culture",
+  "Language": "Language",
+  "Explore": "Explore",
+  "Learn more": "Learn more",
+  "Get started": "Get started",
+  "Submit": "Submit",
+  "Message": "Message",
+  "Your Message": "Your Message",
+  "Name": "Name",
+  "Your Name": "Your Name",
+  "Email": "Email",
+  "Your Email": "Your Email",
+  "confirm": {
+    "title": "Success! Now check your email to confirm your subscription",
+    "text": "We ask you to confirm your email to avoid spam. We will only contact you to let you know about our launch!"
+  },
+  "multipleSections": {
+    "title": "How does it work?",
+    "sections": [
+      {
+        "title": "Visual builder",
+        "content": "Create step-by-step client workflows and forms with our no code visual builder. No coding skills required ",
+        "image": "notes.svg"
+      },
+      {
+        "title": "Industries",
+        "content": "Perfect for legal teams, accountants, real estate agents, human resources, freelancers and service businesses",
+        "image": "notes.svg"
+      },
+      {
+        "title": "Visual builder",
+        "content": "Create step-by-step client workflows and forms with our no code visual builder. No coding skills required ",
+        "image": "notes.svg"
+      },
+      {
+        "title": "Industries",
+        "content": "Perfect for legal teams, accountants, real estate agents, human resources, freelancers and service businesses",
+        "image": "notes.svg"
+      }
+    ]
+  }
+}

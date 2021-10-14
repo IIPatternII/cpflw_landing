@@ -1,5 +1,5 @@
 import { Row, Col } from 'antd';
-import { withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import { Fade } from 'react-awesome-reveal';
 import {
   ItemExtra,
@@ -13,17 +13,27 @@ import {
 import { ImageComponent } from '../../common/ImageComponent';
 
 interface TestimonialsProps {
-  title: string;
-  testimonials: { name: string; extra: string; image: string; quote: string }[];
+  content: string;
   id: string;
-  t: any;
 }
 
-const Testimonials = ({ title, testimonials, id, t }: TestimonialsProps) => {
+interface Testimonials {
+  name: string;
+  extra: string;
+  image: string;
+  quote: string;
+}
+
+const Testimonials = ({ content, id }: TestimonialsProps) => {
+  const { t } = useTranslation(content);
+  const testimonials: Testimonials[] = t('testimonials', {
+    returnObjects: true,
+  });
+
   return (
     <TestimonialsSection id={id}>
       <Fade direction='up' triggerOnce>
-        <h6>{title}</h6>
+        <h6>{t('title')}</h6>
         <Row justify='space-between' align='top'>
           {typeof testimonials === 'object' &&
             testimonials.map(({ name, extra, image, quote }, index) => {
@@ -65,4 +75,4 @@ const Testimonials = ({ title, testimonials, id, t }: TestimonialsProps) => {
   );
 };
 
-export default withTranslation()(Testimonials);
+export default Testimonials;
