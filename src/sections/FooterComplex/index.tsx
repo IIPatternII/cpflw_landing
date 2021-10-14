@@ -1,8 +1,8 @@
-import { Row, Col } from "antd";
-import { withTranslation } from "react-i18next";
-import Container from "../../common/Container";
+import { Row, Col } from 'antd';
+import { withTranslation } from 'react-i18next';
+import Container from '../../common/Container';
 
-import i18n from "i18next";
+import i18n from 'i18next';
 import {
   FooterSection,
   Title,
@@ -18,8 +18,8 @@ import {
   Label,
   LanguageSwitch,
   LanguageSwitchContainer,
-} from "./styles";
-import { ImageComponent } from "../../common/ImageComponent";
+} from './styles';
+import { ImageComponent } from '../../common/ImageComponent';
 
 interface SocialLinkProps {
   href: string;
@@ -35,12 +35,12 @@ const FooterComplex = ({ t }: any) => {
     return (
       <a
         href={href}
-        target="_blank"
-        rel="noopener noreferrer"
+        target='_blank'
+        rel='noopener noreferrer'
         key={src}
         aria-label={src}
       >
-        <ImageComponent src={src} width="25px" height="25px" />
+        <ImageComponent src={src} width='25px' height='25px' />
       </a>
     );
   };
@@ -49,76 +49,76 @@ const FooterComplex = ({ t }: any) => {
     <>
       <FooterSection>
         <Container>
-          <Row justify="space-between">
+          <Row justify='space-between'>
             <Col lg={10} md={10} sm={12} xs={12}>
-              <Language>{t("Contact")}</Language>
-              <Large to="/">{t("Tell us everything")}</Large>
+              <Language>{t('Contact')}</Language>
+              <Large to='/'>{t('Tell us everything')}</Large>
               <Para>
                 {t(`Do you have any question? Feel free to reach out.`)}
               </Para>
-              <a href="mailto:l.qqbadze@gmail.com">
+              <a href='mailto:l.qqbadze@gmail.com'>
                 <Chat>{t(`Let's Chat`)}</Chat>
               </a>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Policy")}</Title>
-              <Large to="/" left="true">
-                {t("Application Security")}
+              <Title>{t('Policy')}</Title>
+              <Large to='/' left='true'>
+                {t('Application Security')}
               </Large>
-              <Large left="true" to="/">
-                {t("Software Principles")}
+              <Large left='true' to='/'>
+                {t('Software Principles')}
               </Large>
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
               <Empty />
-              <Large left="true" to="/">
-                {t("Support Center")}
+              <Large left='true' to='/'>
+                {t('Support Center')}
               </Large>
-              <Large left="true" to="/">
-                {t("Customer Support")}
+              <Large left='true' to='/'>
+                {t('Customer Support')}
               </Large>
             </Col>
           </Row>
-          <Row justify="space-between">
+          <Row justify='space-between'>
             <Col lg={10} md={10} sm={12} xs={12}>
               <Empty />
-              <Language>{t("Address")}</Language>
+              <Language>{t('Address')}</Language>
               <Para>Rancho Santa Margarita</Para>
               <Para>2131 Elk Street</Para>
               <Para>California</Para>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Company")}</Title>
-              <Large left="true" to="/">
-                {t("About")}
+              <Title>{t('Company')}</Title>
+              <Large left='true' to='/'>
+                {t('About')}
               </Large>
-              <Large left="true" to="/">
-                {t("Blog")}
+              <Large left='true' to='/'>
+                {t('Blog')}
               </Large>
-              <Large left="true" to="/">
-                {t("Press")}
+              <Large left='true' to='/'>
+                {t('Press')}
               </Large>
-              <Large left="true" to="/">
-                {t("Careers & Culture")}
+              <Large left='true' to='/'>
+                {t('Careers & Culture')}
               </Large>
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
-              <Label htmlFor="select-lang">{t("Language")}</Label>
+              <Label htmlFor='select-lang'>{t('Language')}</Label>
               <LanguageSwitchContainer>
-                <LanguageSwitch onClick={() => handleChange("en")}>
+                <LanguageSwitch onClick={() => handleChange('en')}>
                   <ImageComponent
-                    src="united-states.svg"
-                    aria-label="homepage"
-                    width="30px"
-                    height="30px"
+                    src='united-states.svg'
+                    aria-label='homepage'
+                    width='30px'
+                    height='30px'
                   />
                 </LanguageSwitch>
-                <LanguageSwitch onClick={() => handleChange("es")}>
+                <LanguageSwitch onClick={() => handleChange('es')}>
                   <ImageComponent
-                    src="spain.svg"
-                    aria-label="homepage"
-                    width="30px"
-                    height="30px"
+                    src='spain.svg'
+                    aria-label='homepage'
+                    width='30px'
+                    height='30px'
                   />
                 </LanguageSwitch>
               </LanguageSwitchContainer>
@@ -129,37 +129,31 @@ const FooterComplex = ({ t }: any) => {
       <Extra>
         <Container border={true}>
           <Row
-            justify="space-between"
-            align="middle"
-            style={{ paddingTop: "3rem" }}
+            justify='space-between'
+            align='middle'
+            style={{ paddingTop: '3rem' }}
           >
-            <NavLink to="/">
+            <NavLink to='/'>
               <LogoContainer>
                 <ImageComponent
-                  src="logo.svg"
-                  aria-label="homepage"
-                  width="101px"
-                  height="64px"
+                  src='notes.svg'
+                  aria-label='homepage'
+                  width='101px'
+                  height='64px'
                 />
               </LogoContainer>
             </NavLink>
             <FooterContainer>
               <SocialLink
-                href="https://github.com/Adrinlol/create-react-app-adrinlol"
-                src="github.svg"
+                href='https://github.com/IIPatternII'
+                src='github.svg'
               />
               <SocialLink
-                href="https://twitter.com/Adrinlolx"
-                src="twitter.svg"
+                href='https://twitter.com/robertinom_en'
+                src='twitter.svg'
               />
-              <SocialLink
-                href="https://www.linkedin.com/in/lasha-kakabadze/"
-                src="linkedin.svg"
-              />
-              <SocialLink
-                href="https://medium.com/@lashakakabadze/"
-                src="medium.svg"
-              />
+              <SocialLink href='' src='linkedin.svg' />
+              <SocialLink href='' src='medium.svg' />
             </FooterContainer>
           </Row>
         </Container>
