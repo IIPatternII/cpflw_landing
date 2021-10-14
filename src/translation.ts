@@ -28,7 +28,7 @@ i18n
     //   },
     // },
     // ns: ["translations"],
-    defaultNS: "translation",
+    defaultNS: "common",
   });
 
 export default i18n;
