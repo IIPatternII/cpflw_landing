@@ -1,21 +1,19 @@
-import { lazy, Suspense } from "react";
-import { Switch, Route } from "react-router-dom";
-import Header from "../components/Header";
-import routes from "./config";
-import { Styles } from "../styles/styles";
-import FooterSimple from "../components/FooterSimple";
-import { useEffect } from "react";
+import { lazy, Suspense } from 'react';
+import { Switch, Route } from 'react-router-dom';
+import Header from '../sections/Header';
+import routes from './config';
+import { Styles } from '../styles/styles';
+import FooterSimple from '../sections/FooterSimple';
+import { useEffect } from 'react';
 import ReactGA from 'react-ga';
-import FooterComplex from "../components/FooterComplex";
-
+import FooterComplex from '../sections/FooterComplex';
 
 ReactGA.initialize('UA-207645967-1');
 
 const Router = () => {
-
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search);
-  }, [])
+  }, []);
 
   return (
     <Suspense fallback={null}>
@@ -34,7 +32,7 @@ const Router = () => {
         })}
       </Switch>
       {/* <FooterSimple/> */}
-        <FooterComplex/>
+      <FooterComplex />
     </Suspense>
   );
 };

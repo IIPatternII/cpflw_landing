@@ -1,19 +1,17 @@
 import { lazy } from 'react';
 
-const Testimonials = lazy(() => import('../../components/Testimonials'));
+const Testimonials = lazy(() => import('../../sections/Testimonials'));
 const Container = lazy(() => import('../../common/Container'));
 const ScrollToTop = lazy(() => import('../../common/ScrollToTop'));
-const MultipleSections = lazy(
-  () => import('../../components/MultipleSections')
-);
+const MultipleSections = lazy(() => import('../../sections/MultipleSections'));
 const ContentBlockWithButtons = lazy(
-  () => import('../../components/ContentBlock/ContentBlockWithButtons')
+  () => import('../../sections/ContentBlock/ContentBlockWithButtons')
 );
 const ContentBlockWithSections = lazy(
-  () => import('../../components/ContentBlock/ContentBlockWithSections')
+  () => import('../../sections/ContentBlock/ContentBlockWithSections')
 );
 const ContentBlockWithEmailCapture = lazy(
-  () => import('../../components/ContentBlock/ContentBlockWithEmailCapture')
+  () => import('../../sections/ContentBlock/ContentBlockWithEmailCapture')
 );
 
 const Home = () => {

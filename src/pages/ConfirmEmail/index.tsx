@@ -1,7 +1,7 @@
 import { lazy } from 'react';
 
 const Container = lazy(() => import('../../common/Container'));
-const MiddleBlock = lazy(() => import('../../components/MiddleBlock'));
+const MiddleBlock = lazy(() => import('../../sections/MiddleBlock'));
 
 const Home = () => {
   return (
