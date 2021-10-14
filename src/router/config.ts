@@ -7,7 +7,17 @@ const routes = [
   {
     path: ["/confirm"],
     exact: true,
-    component: "ConfirmEmail",
+    component: "ConfirmEmailPage",
+  },
+  {
+    path: ["/privacy"],
+    exact: true,
+    component: "PrivacyPolicyPage",
+  },
+  {
+    path: ["/terms"],
+    exact: true,
+    component: "TermsOfServicePage",
   },
 ];
 

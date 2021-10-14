@@ -3,7 +3,7 @@ import { lazy } from 'react';
 const Container = lazy(() => import('../../common/Container'));
 const MiddleBlock = lazy(() => import('../../sections/MiddleBlock'));
 
-const Home = () => {
+const ConfirmEmailPage = () => {
   return (
     <Container>
       <MiddleBlock content='ConfirmEmailContent' />
@@ -11,4 +11,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default ConfirmEmailPage;
