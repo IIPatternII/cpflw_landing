@@ -1,11 +1,11 @@
 import { lazy } from 'react';
-//TODO: Lazy load all components!
-import MultipleSections from '../../components/MultipleSections';
-//TODO: Lazy load all components!
-import Testimonials from '../../components/Testimonials';
 
+const Testimonials = lazy(() => import('../../components/Testimonials'));
 const Container = lazy(() => import('../../common/Container'));
 const ScrollToTop = lazy(() => import('../../common/ScrollToTop'));
+const MultipleSections = lazy(
+  () => import('../../components/MultipleSections')
+);
 const ContentBlockWithButtons = lazy(
   () => import('../../components/ContentBlock/ContentBlockWithButtons')
 );

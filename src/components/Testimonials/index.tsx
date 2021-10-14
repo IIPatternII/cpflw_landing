@@ -17,7 +17,7 @@ interface TestimonialsProps {
   id: string;
 }
 
-interface Testimonials {
+interface ITestimonials {
   name: string;
   extra: string;
   image: string;
@@ -26,7 +26,7 @@ interface Testimonials {
 
 const Testimonials = ({ content, id }: TestimonialsProps) => {
   const { t } = useTranslation(content);
-  const testimonials: Testimonials[] = t('testimonials', {
+  const testimonials: ITestimonials[] = t('testimonials', {
     returnObjects: true,
   });
 
