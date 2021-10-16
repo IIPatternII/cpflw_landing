@@ -41,13 +41,14 @@ const Testimonials = ({ content, id }: TestimonialsProps) => {
                 <Col key={index} lg={6} md={12} sm={12} xs={24}>
                   <ItemWrapper>
                     <StarsContainer>
-                      {[1, 2, 3, 4, 5].map((_) => {
+                      {[...Array(5)].map((_, index) => {
                         return (
                           <ImageComponent
                             rounded
                             src='star.svg'
                             height={'25px'}
                             width={'25px'}
+                            key={index}
                           />
                         );
                       })}

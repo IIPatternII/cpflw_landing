@@ -5,6 +5,11 @@ const routes = [
     component: "Home",
   },
   {
+    path: ["/pricing"],
+    exact: true,
+    component: "PricingPage",
+  },
+  {
     path: ["/confirm"],
     exact: true,
     component: "ConfirmEmailPage",

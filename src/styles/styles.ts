@@ -27,7 +27,8 @@ export const Styles = createGlobalStyle`
         padding:0;
         border: 0;
         outline: 0;
-        background: #fff;
+        /* background: #fff; */
+        background: rgba(245, 245, 245, 1);
         overflow-x: hidden;
     }
 
@@ -53,10 +54,8 @@ export const Styles = createGlobalStyle`
 
     h1,
     h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    h3
+    {
         font-family: 'Motiva Sans Bold', serif;
         color: #18216d;
         font-size: 56px;
@@ -70,6 +69,25 @@ export const Styles = createGlobalStyle`
           font-size: 32px;
         }
     }
+
+    h4,
+    h5,
+    h6 {
+        font-family: 'Motiva Sans Bold', serif;
+        color: #18216d;
+        font-size: 36px;
+        line-height: 1.18;
+
+        @media only screen and (max-width: 890px) {
+          font-size: 30px;
+        }
+      
+        @media only screen and (max-width: 414px) {
+          font-size: 20px;
+        }
+    }
+
+
 
     p {
         color: #18216d;
