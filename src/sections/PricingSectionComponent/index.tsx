@@ -1,4 +1,5 @@
 import { Col, Row } from 'antd';
+import { useTranslation } from 'react-i18next';
 import { ImageComponent } from '../../common/ImageComponent';
 import {
   PricingSection,
@@ -15,53 +16,6 @@ import {
   Title,
 } from './styles';
 
-const tiers: ITier[] = [
-  {
-    title: 'Basic',
-    subtitle: 'Reach up to 100 likes!',
-    icon: 'star.svg',
-    price: 9,
-    slashedPrice: 12,
-    subPriceText: 'perfect for you!',
-    features: ['100% safe', 'feature 1', 'feature 2'],
-    buttonText: 'Start now!',
-    preferedTier: false,
-  },
-  {
-    title: 'Medium',
-    subtitle: 'Reach up to 200 likes!',
-    icon: 'star.svg',
-    price: 14,
-    slashedPrice: 20,
-    subPriceText: 'perfect for you!',
-    features: ['100% safe', 'feature 1', 'feature 2'],
-    buttonText: 'Start now!',
-    preferedTier: false,
-  },
-  {
-    title: 'Profesional',
-    subtitle: 'Reach up to 300 likes!',
-    icon: 'star.svg',
-    price: 29,
-    slashedPrice: 40,
-    subPriceText: 'perfect for you!',
-    features: ['100% safe', 'feature 1', 'feature 2'],
-    buttonText: 'Start now!',
-    preferedTier: true,
-  },
-  {
-    title: 'Extreme',
-    subtitle: 'Reach up to 400 likes!',
-    icon: 'star.svg',
-    price: 44,
-    slashedPrice: 60,
-    subPriceText: 'perfect for you!',
-    features: ['100% safe', 'feature 1', 'feature 2'],
-    buttonText: 'Start now!',
-    preferedTier: false,
-  },
-];
-
 interface ITier {
   title: string;
   subtitle: string;
@@ -75,6 +29,8 @@ interface ITier {
 }
 
 const PricingSectionComponent = () => {
+  const { t } = useTranslation('pricing');
+  const tiers: ITier[] = t('prices', { returnObjects: true });
   return (
     <PricingSection>
       <Title>Pricing</Title>
@@ -89,7 +45,7 @@ const PricingSectionComponent = () => {
                     <TierItemTitle>{tier.title}</TierItemTitle>
                     <TierItemSubtitle>{tier.subtitle}</TierItemSubtitle>
                   </TierItemHeader>
-                  {[...Array(index + 1)].map((_) => {
+                  {[...Array(index + 1)].map((_, index) => {
                     return (
                       <ImageComponent
                         src={tier.icon}
@@ -103,8 +59,10 @@ const PricingSectionComponent = () => {
                   <TierItemSlashedPrice>
                     ${tier.slashedPrice}
                   </TierItemSlashedPrice>
-                  {tier.features.map((feature) => {
-                    return <TierItemFeature>{feature}</TierItemFeature>;
+                  {tier.features.map((feature, index) => {
+                    return (
+                      <TierItemFeature key={index}>{feature}</TierItemFeature>
+                    );
                   })}
                   <TierItemButon preferedTier={tier.preferedTier}>
                     {tier.buttonText}

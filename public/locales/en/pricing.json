@@ -1,0 +1,48 @@
+{
+  "prices": [
+    {
+      "title": "Basic",
+      "subtitle": "Reach up to 100 likes!",
+      "icon": "star.svg",
+      "price": 9,
+      "slashedPrice": 12,
+      "subPriceText": "perfect for you!",
+      "features": ["100% safe", "feature 1", "feature 2"],
+      "buttonText": "Start now!",
+      "preferedTier": false
+    },
+    {
+      "title": "Medium",
+      "subtitle": "Reach up to 200 likes!",
+      "icon": "star.svg",
+      "price": 14,
+      "slashedPrice": 20,
+      "subPriceText": "perfect for you!",
+      "features": ["100% safe", "feature 1", "feature 2"],
+      "buttonText": "Start now!",
+      "preferedTier": false
+    },
+    {
+      "title": "Profesional",
+      "subtitle": "Reach up to 300 likes!",
+      "icon": "star.svg",
+      "price": 29,
+      "slashedPrice": 40,
+      "subPriceText": "perfect for you!",
+      "features": ["100% safe", "feature 1", "feature 2"],
+      "buttonText": "Start now!",
+      "preferedTier": true
+    },
+    {
+      "title": "Extreme",
+      "subtitle": "Reach up to 400 likes!",
+      "icon": "star.svg",
+      "price": 44,
+      "slashedPrice": 60,
+      "subPriceText": "perfect for you!",
+      "features": ["100% safe", "feature 1", "feature 2"],
+      "buttonText": "Start now!",
+      "preferedTier": false
+    }
+  ]
+}
