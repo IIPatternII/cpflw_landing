@@ -30,7 +30,7 @@ const FooterSimple = ({ t }: any) => {
 					</Row>
 					<br />
 					<Row justify='center' align='bottom'>
-						© {new Date().getFullYear()} CPFlow. All rights
+						© {new Date().getFullYear()} Client Flows. All rights
 						reserved.
 					</Row>
 				</Container>
