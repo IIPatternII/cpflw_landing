@@ -8,33 +8,36 @@ import { useEffect } from 'react';
 import ReactGA from 'react-ga';
 import FooterComplex from '../sections/FooterComplex';
 
-ReactGA.initialize('UA-207645967-1');
+//TODO
+// ReactGA.initialize('UA-207645967-1');
 
 const Router = () => {
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
+	useEffect(() => {
+		ReactGA.pageview(window.location.pathname + window.location.search);
+	}, []);
 
-  return (
-    <Suspense fallback={null}>
-      <Styles />
-      <Header />
-      <Switch>
-        {routes.map((routeItem) => {
-          return (
-            <Route
-              key={routeItem.component}
-              path={routeItem.path}
-              exact={routeItem.exact}
-              component={lazy(() => import(`../pages/${routeItem.component}`))}
-            />
-          );
-        })}
-      </Switch>
-      {/* <FooterSimple/> */}
-      <FooterComplex />
-    </Suspense>
-  );
+	return (
+		<Suspense fallback={null}>
+			<Styles />
+			<Header />
+			<Switch>
+				{routes.map((routeItem) => {
+					return (
+						<Route
+							key={routeItem.component}
+							path={routeItem.path}
+							exact={routeItem.exact}
+							component={lazy(
+								() => import(`../pages/${routeItem.component}`)
+							)}
+						/>
+					);
+				})}
+			</Switch>
+			<FooterSimple />
+			{/* <FooterComplex /> */}
+		</Suspense>
+	);
 };
 
 export default Router;
